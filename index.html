@@ -8,26 +8,35 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
-<body>
-
+<body> 
+    
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu [x]</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Tambreda<br>Thieves</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basics</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lore</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">"Mafiosos"</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Items</a> 
-    <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>-->
-  </div>
+    
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu [x]</a>
+    
+      <div class="w3-container">
+        <h3 class="w3-padding-60"><b>Tambreda<br>Thieves</b></h3>
+      </div>
+    
+      <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+        <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basics</a> 
+        <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lore</a> 
+        <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">"Mafiosos"</a> 
+        <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Items</a> 
+        <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>-->
+      </div>
+
+    <div id="content">
+        <img src="images/Icon_Gem.png" class="ribbon" alt="" />
+        <div></div>
+    </div>
+    
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+<header class="w3-container w3NaNtop w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
   <span>Tambreda Thieves</span>
 </header>
@@ -38,9 +47,13 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
+<div id="sun">
+            <img src="images/Sun.png" class="ribbon" alt="" />
+</div>
+    
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Game Design</b></h1>
+    <h1 class="w3-jumbo"><b>Tambreda Thieves</b></h1>
     <h1 class="w3-xxxlarge w3-text-red"><b>Basics.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
   </div>
@@ -150,10 +163,15 @@
     <p>There are different kind of items. Valuables are the most improtant items. Scrap metal is used for making and repairing cars.</p>
   </div>
 
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" style= "margin-left: 300px">
+      
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-blue w3-xlarge w3-padding-32">Sapphire</li>
+           
+            <div id="content">
+            <img src="images/Icon_Gem.png" class="ribbon" alt="" />
+            </div>
         <li class="w3-padding-16">Abilities: "Deep Understanding."</li>
         <li class="w3-padding-16">Locations: ???</li>
         <li class="w3-padding-16">Obsession buyers: Embra</li>
@@ -167,7 +185,10 @@
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-red w3-xlarge w3-padding-32">Ruby</li>
-        <li class="w3-padding-16">Abilities: "Deep brew."</li>
+            <div id="content">
+            <img src="images/Icon_Gem_ruby.png" class="ribbon" alt="" />
+            </div>
+          <li class="w3-padding-16">Abilities: "Deep brew."</li>
         <li class="w3-padding-16">Locations: ???</li>
         <li class="w3-padding-16">Obsession buyers: Embra</li>
         <li class="w3-padding-16">
@@ -177,9 +198,12 @@
       </ul>
     </div>
       
-      <div class="w3-half">
+    <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-green w3-xlarge w3-padding-32">Emerald</li>
+            <div id="content">
+                <img src="images/Icon_Gem_emerald.png" class="ribbon" alt="" />
+            </div>
         <li class="w3-padding-16">Abilities: "Grow boost."</li>
         <li class="w3-padding-16">Locations: ???</li>
         <li class="w3-padding-16">Obsession buyers: Embra</li>
@@ -190,7 +214,7 @@
       </ul>
     </div>  
       
-      <div class="w3-half">
+    <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-yellow w3-xlarge w3-padding-32">Magic Lamb</li>
         <li class="w3-padding-16">Abilities: "3 wishes."</li>

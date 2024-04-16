@@ -10,4 +10,10 @@ w3-light-grey {background-color: aqua}
 
 .w3-half img:hover{opacity:1}
 
+#content { position: relative;}
+    
+#content img { position: absolute; top: 0px; left: 0px; width: 200px}
 
+#sun img {position: absolute; top: 0px; right: 0px; width: 400px}
+
+.categoriesSideBar {width: 50%}
