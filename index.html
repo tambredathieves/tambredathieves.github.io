@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <link href="CSS/style.css" rel="stylesheet" type="text/css">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <title>Tambreda Game Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body> 
     
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-lime w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
     
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu [x]</a>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hideNaNlarge w3-display-topleft" style="width:100%;font-size:22px;background-color: darkgreen; color: yellowgreen">Close Menu [x]</a>
     
-      <div class="w3-container">
+    <div id="logo">
+        <img src="images/Tambreda_Logo.png" class="logo" alt="" />
+        <div></div>
+    </div>    
+    
+    <div class="w3-container">
         <h3 class="w3-padding-60"><b>Tambreda<br>Thieves</b></h3>
-      </div>
+    </div>
     
-      <div class="w3-bar-block">
-        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <div class="w3-bar-block">
+        <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
         <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Basics</a> 
         <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Lore</a> 
         <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">"Mafiosos"</a> 
         <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Items</a> 
         <!--<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>-->
-      </div>
-
-    <div id="content">
-        <img src="images/Icon_Gem.png" class="ribbon" alt="" />
-        <div></div>
+    </div>
+    <div id="panel-bottom">
+        <img src="images/Panel_Bottom.png" class="" alt="" />
     </div>
     
 </nav>
@@ -47,17 +48,30 @@
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<div id="sun">
-            <img src="images/Sun.png" class="ribbon" alt="" />
-</div>
     
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Tambreda Thieves</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red"><b>Basics.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div id="sun">
+        <img src="images/Sun.png" class="ribbon" alt="" />
+    </div>
+      
+    <div id="cloud1">
+        <img src="images/Cloud.png" class="ribbon" alt="" />
+    </div>
+      
+    <div id="cloud2">
+        <img src="images/Cloud.png" class="ribbon" alt="" />
+    </div>
+      
+    <div id="cloud3">
+        <img src="images/Cloud_Middle.png" class="ribbon" alt="" />
+    </div>
+
+    <h1 class="content">Tambreda Thieves</h1>
+    <h2 class="title"><b>Basics</b></h2>
+    <hr class="line-round">
   </div>
-  
+    
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <div class="w3-half">
@@ -78,15 +92,19 @@
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
+    
       <p id="caption"></p>
     </div>
   </div>
+  
+    <h2>Main gameplay loop:</h2>
+    
+    <img src="images/PlayLoop.png" alt="ortrait_Embra" style="width:100%">
 
   <!-- Services -->
   <div class="w3-container" id="services" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Lore.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr style="width:10%;border:5px solid darkgreen" class="w3-round">
     <p>Tambreda is an imagenary Town/City in Western Europe, that is partly run by a family of thieves.</p>
       
     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
@@ -98,7 +116,7 @@
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>"Mafiosos"</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <hr class="line-round">
     <p>The best team in the world.</p>
     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
@@ -160,7 +178,7 @@
   <div class="w3-container" id="packages" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>Items.</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>There are different kind of items. Valuables are the most improtant items. Scrap metal is used for making and repairing cars.</p>
+    <p>There are different kind of items. Valuables are the most improtant items which are stealed to be placed to a base. Scrap metal is used for making and repairing cars.</p>
   </div>
 
   <div class="w3-row-padding" style= "margin-left: 300px">
@@ -169,9 +187,10 @@
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-blue w3-xlarge w3-padding-32">Sapphire</li>
            
-            <div id="content">
+        <div class="content">
             <img src="images/Icon_Gem.png" class="ribbon" alt="" />
-            </div>
+        </div>
+          
         <li class="w3-padding-16">Abilities: "Deep Understanding."</li>
         <li class="w3-padding-16">Locations: ???</li>
         <li class="w3-padding-16">Obsession buyers: Embra</li>
@@ -186,7 +205,7 @@
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-red w3-xlarge w3-padding-32">Ruby</li>
             <div id="content">
-            <img src="images/Icon_Gem_ruby.png" class="ribbon" alt="" />
+                <img src="images/Icon_Gem_ruby.png" class="ribbon" alt="" />
             </div>
           <li class="w3-padding-16">Abilities: "Deep brew."</li>
         <li class="w3-padding-16">Locations: ???</li>
@@ -201,7 +220,7 @@
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
         <li class="w3-green w3-xlarge w3-padding-32">Emerald</li>
-            <div id="content">
+            <div class="content">
                 <img src="images/Icon_Gem_emerald.png" class="ribbon" alt="" />
             </div>
         <li class="w3-padding-16">Abilities: "Grow boost."</li>
@@ -253,34 +272,59 @@
   </div>
   -->
     
-    <img src="images/City_Shiluette.png" alt="Monee" style="width:100%">
+    <div id="city">
+        <img src="images/City_Shiluette.png" class="city" alt=""/>
+    </div>
 
+    <div id="car">
+        <img src="images/Car.png">
+    </div>
+    
 <!-- End page content -->
-</div>
+
 
 <!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Obsessed by <a href="https://www.eejoki.fi/" title="W3.CSS" target="_blank" class="w3-hover-opacity">eejoki</a></p></div>
+<div id="footer">
+    
+        <div class= "somelink"> 
+            <a  href="https://bsky.app/profile/tambreda.bsky.social">     
+            <img alt = "Twitter" src="images/BlueSky_Logo.png">
+            </a>
+        </div>
 
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
+        <div class= "somelink">
+            <a href="">
+                <img alt = "Instagram" src="images/Discord_Logo.png">
+            </a>
+        </div>
 
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
+        <div class= "somelink">
+               <a href="https://godotengine.org/">
+                 <img alt = "Artstation" src="images/Godot_Logo.png">
+            </a>           
+        </div>
+    
+    <p class="w3-right">Obsessed by <a href="https://www.eejoki.fi/" title="W3.CSS" target="_blank" class="w3-hover-opacity">eejoki</a></p></div>
 
-</body>
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.display = "block";
+              document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+              document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+              document.getElementById("img01").src = element.src;
+              document.getElementById("modal01").style.display = "block";
+              var captionText = document.getElementById("caption");
+              captionText.innerHTML = element.alt;
+            }
+        </script>
+    </body>
 </html>
