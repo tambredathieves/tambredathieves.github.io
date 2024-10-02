@@ -5,7 +5,9 @@
 
 body {font-family: Playful; color: yellowgreen}
 
-body {background: #008080}
+/*body {background: #008080}*/
+body {background-image: url('../images/Background_wallpaper.png')}
+body {background-size: 20%}
 
 body {font-size:16px;}
 
@@ -23,9 +25,88 @@ w3-light-grey {background-color: aqua}
 
 #sun img {position: absolute; top: 0%; right: 0%; width: 20%}
 
-#cloud1 img {position: absolute; top: 0%; left: 15%; width: 15%}
-#cloud2 img {position: absolute; top: 0%; right: 15%; width: 15%; transform: scaleX(-1);}
-#cloud3 img {position: absolute; top: 0%; left: 50%; width: 15%;}
+#cloud_side_l img {position: absolute; top: 0%; left: 15%; width: 15%}
+#cloud_side_r img {position: absolute; top: 0%; right: 0%; width: 25%; height: 20%; transform: scaleX(-1);}
+
+#cloud_forward_1 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 20%;
+  animation-name: cloud_animation_forward;
+  animation-duration: 17.33s;
+  animation-iteration-count: infinite; 
+}
+
+#cloud_forward_2 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 15%;
+  animation-name: cloud_animation_forward;
+  animation-duration: 10.33s;
+  animation-iteration-count: infinite;
+}
+
+#cloud_forward_3 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 12%;
+  animation-name: cloud_animation_forward;
+  animation-duration: 12.33s;
+  animation-iteration-count: infinite; 
+}
+
+#cloud_forward_4 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 11%;
+  animation-name: cloud_animation_forward;
+  animation-duration: 24.33s;
+  animation-iteration-count: infinite; 
+}
+
+#cloud_backward_1 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 21%;
+  animation-name: cloud_animation_backward;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; 
+}
+
+#cloud_backward_2 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 14%;
+  animation-name: cloud_animation_backward;
+  animation-duration: 14s;
+  animation-iteration-count: infinite; 
+}
+
+#cloud_backward_3 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 11%;
+  animation-name: cloud_animation_backward;
+  animation-duration: 12s;
+  animation-iteration-count: infinite; 
+}
+
+#cloud_backward_4 img {
+  position: absolute;
+  top: 0%;
+  left: 50%; 
+  width: 11%;
+  animation-name: cloud_animation_backward;
+  animation-duration: 22s;
+  animation-iteration-count: infinite; 
+}
 
 #logo img {top: 0%; left: 10%; width: 90%}
 
@@ -33,19 +114,63 @@ w3-light-grey {background-color: aqua}
 
 #line-round {width:1000px; border:5px; color: orange}
 
-#car img {
-  width: 190px;
-  height: 100px;
+#car4 img {
+  width: 230px;
+ 
   background-color: transparent;
-  position: relative;
-  animation-name: example;
+  position: fixed;
+  bottom: 0%;
+  animation-name: car_animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  }
+
+#car3 img {
+  width: 210px;
+ 
+  background-color: transparent;
+  position: fixed;
+  bottom: 0%;
+  animation-name: car_animation;
   animation-duration: 5s;
+  animation-iteration-count: infinite; 
+  }
+
+#car2 img {
+  width: 175px;
+
+  background-color: transparent;
+  position: fixed;
+  bottom: 0%;
+  animation-name: car_animation;
+  animation-duration: 7.5s;
   animation-iteration-count: infinite; 
 }
 
-@keyframes example {
+#car1 img {
+  width: 150px;
+ 
+  background-color: transparent;
+  position: fixed;
+  bottom: 0%;
+  animation-name: car_animation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; 
+}
+
+@keyframes car_animation {
   0%   {background-color:transparent; left:120%;}
   100% {background-color:transparent; left:-20%}
+}
+
+@keyframes cloud_animation_forward {
+  0%   {background-color:transparent; left:0%;}
+  100% {background-color:transparent; left:100%}
+}
+
+@keyframes cloud_animation_backward {
+  0%   {background-color:transparent; left:100%;}
+  100% {background-color:transparent; left:0%}
 }
 
 #footer
