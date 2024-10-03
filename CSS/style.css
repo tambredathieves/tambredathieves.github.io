@@ -6,7 +6,7 @@
 body {font-family: Playful; color: yellowgreen}
 
 /*body {background: #008080}*/
-body {background-image: url('../images/Background_wallpaper.png')}
+body {background-image: url('../images/background-wallpaper.png')}
 body {background-size: 20%}
 
 body {font-size:16px;}
@@ -25,10 +25,10 @@ w3-light-grey {background-color: aqua}
 
 #sun img {position: absolute; top: 0%; right: 0%; width: 20%}
 
-#cloud_side_l img {position: absolute; top: 0%; left: 15%; width: 15%}
-#cloud_side_r img {position: absolute; top: 0%; right: 0%; width: 25%; height: 20%; transform: scaleX(-1);}
+#cloud-side-l img {position: absolute; top: 0%; left: 15%; width: 15%}
+#cloud-side-r img {position: absolute; top: 0%; right: 0%; width: 25%; height: 20%; transform: scaleX(-1);}
 
-#cloud_forward_1 img {
+#cloud-forward-1 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -38,7 +38,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite; 
 }
 
-#cloud_forward_2 img {
+#cloud-forward-2 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -48,7 +48,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite;
 }
 
-#cloud_forward_3 img {
+#cloud-forward-3 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -58,7 +58,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite; 
 }
 
-#cloud_forward_4 img {
+#cloud-forward-4 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -68,7 +68,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite; 
 }
 
-#cloud_backward_1 img {
+#cloud-backward-1 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -78,7 +78,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite; 
 }
 
-#cloud_backward_2 img {
+#cloud-backward-2 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -88,7 +88,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite; 
 }
 
-#cloud_backward_3 img {
+#cloud-backward-3 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -98,7 +98,7 @@ w3-light-grey {background-color: aqua}
   animation-iteration-count: infinite; 
 }
 
-#cloud_backward_4 img {
+#cloud-backward-4 img {
   position: absolute;
   top: 0%;
   left: 50%; 
@@ -160,7 +160,7 @@ w3-light-grey {background-color: aqua}
 
 @keyframes car_animation {
   0%   {background-color:transparent; left:120%;}
-  100% {background-color:transparent; left:-20%}
+  100% {background-color:transparent; left:-50%}
 }
 
 @keyframes cloud_animation_forward {
