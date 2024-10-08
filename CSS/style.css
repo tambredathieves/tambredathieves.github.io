@@ -26,7 +26,7 @@ w3-light-grey {background-color: aqua}
 #sun img {position: absolute; top: 0%; right: 0%; width: 20%}
 
 #cloud-side-l img {position: absolute; top: 0%; left: 15%; width: 15%}
-#cloud-side-r img {position: absolute; top: 0%; right: 0%; width: 25%; height: 20%; transform: scaleX(-1);}
+#cloud-side-r img {position: absolute; top: 0%; right: 0%; width: 25%; transform: scaleX(-1);}
 
 #cloud-forward-1 img {
   position: absolute;
