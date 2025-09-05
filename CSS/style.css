@@ -13,6 +13,26 @@ body {font-size:16px;}
 
 h1,h2,h3,h4,h5 {font-family: Playful; color: yellow}
 
+h1 {
+  text-align: center;
+  font-size: 1000pt;
+  transform: scale(1.5);
+  color: yellow;
+  position: relative;
+  z-index: 1;
+}
+
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  z-index: -1;
+  color: darkgreen;
+  -webkit-text-stroke: 2px darkgreen;
+  text-stroke: 10px darkgreen;
+  pointer-events: none;
+}
+
 w3-light-grey {background-color: aqua}
 
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
@@ -23,7 +43,18 @@ w3-light-grey {background-color: aqua}
     
 #content img { position: absolute; top: 0%; left: 0%; width: 200px}
 
-#sun img {position: absolute; top: 0%; right: 0%; width: 20%}
+#sun img {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 20%;
+  animation: sun-rotate 12s linear infinite;
+}
+
+@keyframes sun-rotate {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
 
 #cloud-side-l img {position: absolute; top: 0%; left: 15%; width: 15%}
 #cloud-side-r img {position: absolute; top: 0%; right: 0%; width: 25%; transform: scaleX(-1);}
