@@ -7,8 +7,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body> 
-    
+<body>
+
+<div id="content-layer">
+
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-lime w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
     
@@ -348,8 +350,13 @@
     <div id="car4">
         <img src="images/Car_Animated.gif">
     </div>
-  
+
+</div><!-- /#content-layer -->
+
 <!-- End page content -->
+
+<!-- Layer toggle — always on top of both layers -->
+<button id="layer-toggle-btn" onclick="toggleLayers()" style="display:none">&#9680; Green Layer</button>
 
 <div id="top-green-layer" aria-hidden="true">
   <img class="top-green-background" src="images/background_swirly.png" alt="">
@@ -382,6 +389,29 @@
     <!-- <p class="w3-right">Obsessed by <a href="https://www.eejoki.com/" title="W3.CSS" target="_blank" class="w3-hover-opacity">eejoki</a></p></div> -->
 
         <script>
+            // Only show the dev toggle in VS Code's built-in browser (Electron webview)
+            if (/Electron/i.test(navigator.userAgent)) {
+              document.getElementById('layer-toggle-btn').style.display = '';
+            }
+
+            // Toggle between content layer and green overlay layer
+            function toggleLayers() {
+              var cl  = document.getElementById('content-layer');
+              var gl  = document.getElementById('top-green-layer');
+              var btn = document.getElementById('layer-toggle-btn');
+              if (cl.classList.contains('layer-hidden')) {
+                cl.classList.remove('layer-hidden');
+                gl.classList.add('layer-hidden');
+                gl.setAttribute('aria-hidden', 'true');
+                btn.textContent = '\u25D0 Green Layer';
+              } else {
+                cl.classList.add('layer-hidden');
+                gl.classList.remove('layer-hidden');
+                gl.setAttribute('aria-hidden', 'false');
+                btn.textContent = '\u25D0 Content Layer';
+              }
+            }
+
             // Script to open and close sidebar
             function w3_open() {
               document.getElementById("mySidebar").style.display = "block";

@@ -232,6 +232,35 @@ div.somelink img
 
 #city img { filter: invert(19%) sepia(33%) saturate(1740%) hue-rotate(70deg) brightness(92%) contrast(107%); width: 100% }
 
+/* ── Layer management ─────────────────────────────────────────── */
+.layer-hidden {
+  display: none !important;
+}
+
+#content-layer.layer-hidden * {
+  animation-play-state: paused !important;
+}
+
+#layer-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: darkgreen;
+  color: yellowgreen;
+  border: 2px solid yellowgreen;
+  padding: 8px 18px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Playful, sans-serif;
+}
+
+#layer-toggle-btn:hover {
+  background-color: yellowgreen;
+  color: darkgreen;
+}
+
 /* Dedicated top overlay layer that can be tuned from one place */
 :root {
   --top-green-layer-z-index: 40;
