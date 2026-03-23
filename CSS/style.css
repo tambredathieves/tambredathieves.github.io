@@ -273,6 +273,7 @@ div.somelink img
   position: fixed;
   inset: 0;
   z-index: var(--top-green-layer-z-index);
+  background-color: #164328;
   pointer-events: none;
   display: grid;
   place-items: center;
